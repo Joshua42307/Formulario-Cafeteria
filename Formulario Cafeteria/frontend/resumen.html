@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumen del Pedido - Cafetería La Cafe</title>
+    <link rel="stylesheet" href="css/resumen.css">
+</head>
+<body>
+
+    <div class="contenedor-principal">
+        <h1>¡Pedido Registrado con Éxito!</h1>
+        <h2>Resumen de tu compra:</h2>
+
+        <div class="resumen-info">
+            <p><strong>Cliente:</strong> <span id="resumenNombre"></span></p>
+            <p><strong>Correo:</strong> <span id="resumenCorreo"></span></p>
+            <p><strong>Teléfono:</strong> <span id="resumenTelefono"></span></p>
+            <hr>
+            <p><strong>Producto:</strong> <span id="resumenProducto"></span></p>
+            <p><strong>Cantidad:</strong> <span id="resumenCantidad"></span></p>
+            <p><strong>Tamaño:</strong> <span id="resumenTamano"></span></p>
+            <hr>
+            <p><strong>Dirección de entrega:</strong> <span id="resumenDireccion"></span>, <span id="resumenCiudad"></span>, C.P. <span id="resumenCP"></span></p>
+        </div>
+
+        <button onclick="window.location.href='index.html'" class="btn-registrar">Hacer otro pedido</button>
+    </div>
+
+    <script src="js/scriptt.js"></script>
+</body>
+</html>

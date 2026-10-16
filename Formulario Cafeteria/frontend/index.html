@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafetería La Cafe - Registro de Pedidos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="contenedor-principal">
+        <header class="encabezado">
+            <h1>Cafeteria La Cafe</h1>
+        </header>
+
+        <form id="pedidoForm" class="cuerpo-formulario">
+            
+            <fieldset>
+                <legend>Datos del cliente</legend>
+                <div class="campo-grupo">
+                    <div class="campo-individual">
+                        <label for="nombre">Nombre del cliente</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="campo-individual">
+                        <label for="correo">Correo electrónico</label>
+                        <input type="email" id="correo" name="correo" required>
+                    </div>
+                </div>
+                <div class="campo-grupo">
+                    <div class="campo-individual">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos del pedido</legend>
+                <div class="campo-grupo">
+                    <div class="campo-individual">
+                        <label for="producto">Producto</label>
+                        <input type="text" id="producto" name="producto" required placeholder="Ej. Café Americano">
+                    </div>
+                    <div class="campo-individual">
+                        <label for="cantidad">Cantidad</label>
+                        <input type="number" id="cantidad" name="cantidad" min="1" value="1" required>
+                    </div>
+                </div>
+                <div class="campo-grupo">
+                    <div class="campo-individual">
+                        <label for="tamano">Tamaño de Bebida</label>
+                        <select id="tamano" name="tamano" required>
+                            <option value="">Selecciona un tamaño</option>
+                            <option value="Chico">Chico</option>
+                            <option value="Mediano">Mediano</option>
+                            <option value="Grande">Grande</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos de entrega</legend>
+                <div class="campo-grupo">
+                    <div class="campo-individual">
+                        <label for="direccion">Dirección</label>
+                        <input type="text" id="direccion" name="direccion" required>
+                    </div>
+                </div>
+                <div class="campo-grupo">
+                    <div class="campo-individual">
+                        <label for="ciudad">Ciudad</label>
+                        <input type="text" id="ciudad" name="ciudad" required>
+                    </div>
+                    <div class="campo-individual">
+                        <label for="cp">Código Postal</label>
+                        <input type="text" id="cp" name="cp" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="botones-contenedor">
+                <button type="reset" class="btn-limpiar">Limpiar</button>
+                <button type="submit" class="btn-registrar">Registrar</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
